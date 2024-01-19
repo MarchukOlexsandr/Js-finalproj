@@ -1,0 +1,934 @@
+   /* PHONE NAV */
+   .navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .navbar .menu-items {
+    display: flex;
+  }
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  
+  .navbar .nav-container a:hover{
+      font-weight: bolder;
+  }
+  
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.904);
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.815);
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #0e2431;
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
+
+
+
+
+
+     
+@media (max-width: 1280px) {
+
+    
+    nav .nav-bar-pc {
+        display: none;
+    }
+
+    nav .navbar {
+        display: flex;
+        z-index: 1;
+    }
+    .menu-items {
+        width: 100%;
+        height: 100vh;
+    }
+    .container {
+        width: 440px;
+    }
+
+    .firstscreen, .second-screen {
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+
+    .second-screen {
+        max-width: 440px;
+    }
+    .cards-container {
+        flex-direction: column;
+        margin: 0px;
+        width: 440px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .in-card {
+        left: 100px;
+        bottom: 200px;
+        z-index: 0;
+        overflow: hidden;
+    }
+    .cards-container  img {
+        width: 300px;
+        overflow: hidden;
+    }
+    .in-card {
+        width: 150px;
+        height: 260px;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    .in-card img {
+        width: 100px;
+        overflow: hidden;
+    }
+    .text {
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .text img {
+        width: 20px;
+        overflow: hidden;
+    }
+    .second-screen .contant-text-btb h2 {
+        display: flex;
+        max-width: 440px;
+        margin: 30px auto;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .in-card {
+        left: 100px;
+        bottom: 200px;
+        overflow: hidden;
+    }
+    .contain .d-flex  {
+        display: flex;
+        margin: 50px auto;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .in-card2 {
+        left: 100px;
+        bottom: 200px;
+        z-index: 0;
+        overflow: hidden;
+        
+}
+    .in-card2 {
+    width: 170px;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+    .in-card2 img {
+        width: 100px;
+        overflow: hidden;
+}
+
+
+    .third-screen {
+        width: auto;
+       
+    }
+    .third-screen .container {
+      align-items: center;
+    }
+    .third-screen .container .img img { 
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+        overflow: hidden;
+
+    }
+
+    .third-screen .container .text {
+        margin: 0;
+        display: flex;
+        font-size: 14px;
+        text-align: start;
+        flex-wrap:wrap ;
+        text-overflow: ellipsis;
+        width: 440px;
+        overflow: hidden;
+        
+    }
+    .third-screen .container {
+        flex-direction: column;
+        width: 400;
+        height: auto;
+        text-align: center;
+        margin-top: 900px;
+        overflow: hidden;
+        
+    }
+
+    .four-screen {
+      width: auto;
+    }
+
+    .four-screen .container-fluid {
+      width: auto;
+    }
+    .four-screen .container-fluid .global {
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .four-screen .container-fluid .global .img img  {
+      display: flex;
+      width: 300px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .four-screen .container-fluid .global2 {
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .four-screen .container-fluid .global2 .item{
+      display: flex; 
+      flex-direction: column;
+    }
+    .four-screen .container-fluid .global2 .img img {
+      width: 300px;
+      align-items: center;
+
+    }
+    .four-screen .container-fluid .global2 .img-ontext img {
+      width: 10px;
+    }
+    .four-screen .container-fluid .img-ontext {
+      flex-direction: column;
+  }
+
+    .four-screen .container-fluid .global2 .img-ontext .text {
+      font-size: 14px;
+      flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 1440px){
+  .four-screen {
+    width: auto;
+  }
+
+  .four-screen .container-fluid {
+    width: auto;
+  }
+  .four-screen .container-fluid .global {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-wrap: wrap;
+  }
+
+  .four-screen .container-fluid .global .img img  {
+    display: flex;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .four-screen .container-fluid .global2 {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+   
+  }
+  .four-screen .container-fluid .global2 .item{
+    display: flex; 
+    flex-direction: column;
+    flex-direction: column-reverse;
+    
+  }
+  .four-screen .container-fluid .global2 .img img {
+    width: 300px;
+    align-items: center;
+
+  }
+  .four-screen .container-fluid .global2 .img-ontext img {
+    width: 24px;
+  }
+  .four-screen .container-fluid .img-ontext {
+    flex-direction: column;
+
+}
+
+  .four-screen .container-fluid .global2 .img-ontext .text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1280px) {
+    nav .nav-bar-pc {
+        display: flex;
+        justify-content: space-between;
+        width: 10000px;
+    }
+
+    nav .navbar {
+        display: none;
+    }
+}
+
+@media (max-width:990){
+  .four-screen .container-fluid .global2 {
+    flex-direction: row;
+    margin-left: 0px;
+    margin-right: 0px;
+   
+  }
+  .four-screen .container-fluid .global2 .item{
+    flex-direction: row;
+  }
+  .four-screen .container-fluid .global2 .img img {
+    width: 300px;
+    align-items: center;
+
+  }
+  .four-screen .container-fluid .global2 .img-ontext img {
+    flex-direction: row;
+    width: 40px;
+    display: flex;
+  }
+  .four-screen .container-fluid .img-ontext {
+    flex-direction: row;
+
+}
+
+  .four-screen .container-fluid .global2 .img-ontext .text {
+    font-size: 14px;
+    flex-direction: row;
+  }
+}
+
+
+@media (max-width: 576px){
+  nav .nav-bar-pc {
+    display: none;
+}
+.firstscreen {
+  padding-top: 80px;
+}
+
+nav .navbar {
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+}
+
+  
+  footer .container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    font-size: 14px;
+  }
+footer .container a, li, p, small {
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+}
+
+@media screen and  (max-width: 440px) {
+  nav .nav-bar-pc {
+    display: none;
+}
+
+nav .navbar {
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    
+}
+.menu-items {
+    width: 100%;
+    height: 100vh;
+}
+
+.firstscreen {
+  padding-top: 80px;
+}
+.bt {
+  display: none;
+}
+
+.bt span {
+  display: none;
+}
+.container {
+
+    width: 420px;
+    text-align: center;
+    padding: 0;
+}
+
+.firstscreen, .second-screen {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.second-screen {
+    max-width: 440px;
+}
+.cards-container {
+    flex-direction: column;
+    margin: 0px;
+    width: 430px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.cards-container .text {
+  flex-direction: column;
+  margin: 10px;
+  width: 430px;
+  align-items: center;
+  text-align: start;
+  overflow: hidden;
+  font-size: 13px;
+}
+.cards-container .text .contant-text-btb {
+  text-align: start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center ;
+  width: 430px;
+  
+}
+.cards-container .text .contant-text-btb h2 {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center ;
+  width: 200px;
+  text-align: center;
+  align-items: center;
+  
+}
+.cards-container .text h2 {
+  flex-direction: column;
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  font-size: 15px;
+  margin-left: 100px;
+  text-align: center;
+  align-items: center;
+}
+.in-card {
+    left: 100px;
+    bottom: 200px;
+    z-index: 0;
+    overflow: hidden;
+}
+.cards-container  img {
+    width: 300px;
+    overflow: hidden;
+}
+.in-card {
+    width: 150px;
+    height: 260px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.in-card img {
+    width: 100px;
+    overflow: hidden;
+}
+.text {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+.text img {
+    width: 20px;
+    overflow: hidden;
+}
+.second-screen .contant-text-btb h2 {
+    display: flex;
+    max-width: 440px;
+    margin: 30px auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.cards-container {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.in-card {
+    left: 100px;
+    bottom: 200px;
+    overflow: hidden;
+}
+.contain .d-flex  {
+    display: flex;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.in-card2 {
+    left: 100px;
+    bottom: 200px;
+    z-index: 0;
+    overflow: hidden;
+    
+}
+.in-card2 {
+width: 170px;
+height: 300px;
+align-items: center;
+text-align: center;
+overflow: hidden;
+}
+.in-card2 img {
+    width: 100px;
+    overflow: hidden;
+}
+
+
+.third-screen {
+    width: auto;
+   
+}
+.third-screen .container {
+  align-items: center;
+}
+.third-screen .container .img img { 
+    width: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow: hidden;
+
+}
+
+.book .bookAliginCentr .text-book {
+  width: 200px;
+  font-size: 12px ;
+}
+
+.book .bookAliginCentr img {
+  width: 200px;
+}
+
+.third-screen .container .text {
+    margin: 0;
+    display: flex;
+    font-size: 14px;
+    text-align: start;
+    flex-wrap:wrap ;
+    text-overflow: ellipsis;
+    width: 375px;
+    overflow: hidden;
+    
+}
+.third-screen .container {
+    flex-direction: column;
+    width: 400;
+    height: auto;
+    text-align: center;
+    margin-top: 900px;
+    overflow: hidden;
+    
+}
+
+.four-screen {
+  width: auto;
+}
+
+.four-screen .container-fluid {
+  width: auto;
+}
+.four-screen .container-fluid .global {
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.four-screen .container-fluid .global .img img  {
+  display: flex;
+  width: 300px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.four-screen .container-fluid .global2 {
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.four-screen .container-fluid .global2 .item{
+  display: flex; 
+  flex-direction: column;
+}
+.four-screen .container-fluid .global2 .img img {
+  width: 300px;
+  align-items: center;
+
+}
+.four-screen .container-fluid .global2 .img-ontext img {
+  width: 40px;
+  display: flex;
+}
+.four-screen .container-fluid .img-ontext {
+  flex-direction: column;
+}
+
+.four-screen .container-fluid .global2 .img-ontext .text {
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+}
+
+@media screen and (max-width:375px) {
+  nav .nav-bar-pc {
+    display: none;
+}
+
+nav .navbar {
+    display: flex;
+    z-index: 1;
+    width: 375px;
+}
+.menu-items {
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    width: 370px;
+}
+
+.firstscreen, .second-screen {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.second-screen {
+    max-width: 370px;
+}
+.cards-container {
+    flex-direction: column;
+    margin: 0px;
+    width: 370px;
+    text-align: center;
+    overflow: hidden;
+}
+.in-card {
+    left: 100px;
+    bottom: 200px;
+    z-index: 0;
+    overflow: hidden;
+}
+.cards-container  img {
+    width: 300px;
+    overflow: hidden;
+}
+.in-card {
+    width: 150px;
+    height: 260px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.in-card img {
+    width: 100px;
+    overflow: hidden;
+}
+.text {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+.text img {
+    width: 20px;
+    overflow: hidden;
+}
+.second-screen .contant-text-btb h2 {
+    display: flex;
+    max-width: 370px;
+    margin: 30px auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.cards-container {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.in-card {
+    left: 100px;
+    bottom: 200px;
+    overflow: hidden;
+}
+.contain .d-flex  {
+    display: flex;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.in-card2 {
+    left: 100px;
+    bottom: 200px;
+    z-index: 0;
+    overflow: hidden;
+    
+}
+.in-card2 {
+width: 170px;
+height: 300px;
+align-items: center;
+text-align: center;
+overflow: hidden;
+}
+.in-card2 img {
+    width: 100px;
+    overflow: hidden;
+}
+
+
+.third-screen {
+    width: auto;
+   
+}
+.third-screen .container {
+  align-items: center;
+}
+.third-screen .container .img img { 
+    width: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow: hidden;
+
+}
+
+.book .bookAliginCentr .text-book {
+  width: 200px;
+  font-size: 12px ;
+}
+
+.book .bookAliginCentr img {
+  width: 200px;
+}
+
+.third-screen .container .text {
+    margin: 0;
+    display: flex;
+    font-size: 14px;
+    text-align: start;
+    flex-wrap:wrap ;
+    text-overflow: ellipsis;
+    width: 375px;
+    overflow: hidden;
+    
+}
+.third-screen .container {
+    flex-direction: column;
+    width: 370px;
+    height: auto;
+    text-align: center;
+    margin-top: 900px;
+    overflow: hidden;
+    
+}
+
+.four-screen {
+  width: auto;
+}
+
+.four-screen .container-fluid {
+  width: auto;
+}
+.four-screen .container-fluid .global {
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.four-screen .container-fluid .global .img img  {
+  display: flex;
+  width: 300px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.four-screen .container-fluid .global2 {
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.four-screen .container-fluid .global2 .item{
+  display: flex; 
+  flex-direction: column;
+}
+.four-screen .container-fluid .global2 .img img {
+  width: 300px;
+  align-items: center;
+
+}
+.four-screen .container-fluid .global2 .img-ontext img {
+  width: 40px;
+  display: flex;
+}
+.four-screen .container-fluid .img-ontext {
+  flex-direction: column;
+}
+
+.four-screen .container-fluid .global2 .img-ontext .text {
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+}
